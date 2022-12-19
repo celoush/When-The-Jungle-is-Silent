@@ -1,6 +1,7 @@
 
 _grp = units v1;
 {_x moveInCargo heli_1} forEach _grp;
+enableRadio false;
 
 diary = player createDiaryRecord ["Diary", [localize "STR_CELO_DiaryName",  localize "STR_CELO_DiaryDescription"]];
 
@@ -59,6 +60,8 @@ forceWeatherChange;
 			localize "STR_CELO_CreatorName"
 		], true, 10, 6, 1.7, 0
 	] spawn BIS_fnc_textTiles;
+
+	enableRadio true;
 
 
 };
